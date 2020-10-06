@@ -16,6 +16,15 @@ public class Lista {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Persona juan=new Persona(25, "juan");
+        Persona pedro=new Persona(25, "pedro");
+        Persona marta=new Persona(25, "marta");
+        Persona maria=new Persona(25, "maria");
+        ListaEnlazada lista=new ListaEnlazada();
+        for (int i = 0; i < 1000; i++) {
+            lista.insertar(new Persona(i,"persona"));
+        }
+        lista.imprimirLista();
     }
     
 }

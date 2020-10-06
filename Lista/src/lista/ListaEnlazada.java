@@ -29,8 +29,16 @@ public class ListaEnlazada {
             ultimo = nueva;
         }
     }
-    public void imprimirLista(){
-        
+
+    public void imprimirLista() {
+        Persona aux = inicial;
+        while (aux != null) {
+            System.out.print(aux.getNombre());
+            System.out.print("-----");
+            System.out.println(aux.getEdad());
+            aux = aux.getSiguient();
+        }
+
     }
 
 }

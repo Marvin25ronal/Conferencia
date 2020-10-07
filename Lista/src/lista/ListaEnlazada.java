@@ -40,5 +40,17 @@ public class ListaEnlazada {
         }
 
     }
+    public void buscar(String nombre){
+        int i=0;
+        Persona aux=inicial;
+        while(aux!=null){
+            if(nombre.equalsIgnoreCase(aux.getNombre())){
+                System.out.println(i);
+                return;
+            }
+            i++;
+            aux=aux.getSiguient();
+        }
+    }
 
 }

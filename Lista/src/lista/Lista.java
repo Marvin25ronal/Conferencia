@@ -21,10 +21,12 @@ public class Lista {
         Persona marta=new Persona(25, "marta");
         Persona maria=new Persona(25, "maria");
         ListaEnlazada lista=new ListaEnlazada();
-        for (int i = 0; i < 1000; i++) {
-            lista.insertar(new Persona(i,"persona"));
-        }
+        lista.insertar(juan);
+        lista.insertar(pedro);
+        lista.insertar(marta);
+        lista.insertar(maria);
         lista.imprimirLista();
+        lista.buscar("maria");
     }
     
 }

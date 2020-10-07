@@ -14,6 +14,7 @@ public class Persona {
     private int edad;
     private String nombre;
     private Persona siguient;
+    private Persona anterior;
 
     public Persona(int edad, String nombre) {
         this.edad = edad;
